@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home — Fairchild &amp; Dalrymple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  
+</head>
+<body><!-- TOP BANNER -->
+<div class="top-banner" id="top-banner" style="position:fixed;top:0;left:0;right:0;z-index:300">
+  <div class="top-banner-left">Fairchild &amp; Dalrymple, PLLC &nbsp;·&nbsp; Lynchburg, Virginia</div>
+  <div class="top-banner-right">
+    <a class="banner-contact" href="tel:14348465470">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      (434) 846-5470
+    </a>
+    <a class="banner-contact" href="/cdn-cgi/l/email-protection#81e2eeeff5e0e2f5c1e7e0e8f3e2e9e8ede5ede0f6f7e0afe2eeec">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <span class="__cf_email__" data-cfemail="6b0804051f0a081f2b0d0a0219080302070f070a1c1d0a45080406">[email&#160;protected]</span>
+    </a>
+  </div>
+</div><!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <img class="nav-logo-img" src="logo.png" alt="Fairchild &amp; Dalrymple crest" width="36" height="36" style="width:36px;height:36px;object-fit:contain;filter:sepia(1) saturate(2) hue-rotate(5deg) brightness(.55)">
+    <span class="nav-logo-text">
+      <span class="nav-logo-name">Fairchild <span style="color:var(--accent)">&amp;</span> Dalrymple</span>
+      <span class="nav-logo-tagline">Attorneys at Law</span>
+    </span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="practice.html">Practice Areas</a></li>
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="insights.html">Insights</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Free Consultation</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navigation">
+  <button class="mob-close" id="mob-close" aria-label="Close menu">&#x2715;</button>
+  <div style="display:flex;align-items:center;gap:.7rem;margin-bottom:.5rem;opacity:.45">
+    <img src="logo.png" alt="" style="width:28px;height:28px;object-fit:contain;filter:sepia(1) saturate(2) hue-rotate(5deg) brightness(.55)">
+    <span style="font-family:var(--serif);font-size:.9rem;color:var(--ink)">Fairchild &amp; Dalrymple</span>
+  </div>
+  <a href="about.html" onclick="closeDrawer()">About</a>
+  <a href="practice.html" onclick="closeDrawer()">Practice Areas</a>
+  <a href="team.html" onclick="closeDrawer()">Our Team</a>
+  <a href="insights.html" onclick="closeDrawer()">Insights</a>
+  <a href="index.html#contact" onclick="closeDrawer()" class="mob-cta-btn">Free Consultation</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <!-- IMAGE PLACEHOLDER — replace this div with: <img class="hero-bg-img" src="hero.jpg" alt="Fairchild & Dalrymple office"> -->
+  <div class="hero-img-placeholder">
+    <div class="hero-img-placeholder-label">Hero / Background Image</div>
+    <div class="hero-img-placeholder-hint">Replace with a high-quality photo · Recommended: 1920×1080px minimum</div>
+    <div class="hero-img-placeholder-hint" style="margin-top:.5rem;opacity:.6">e.g. office exterior, courtroom, team photo</div>
+  </div>
+  <!-- Dark gradient overlay — keeps text readable over any photo -->
+  <div class="hero-overlay"></div>
+  <!-- TEXT CONTENT — overlaid on top of the image -->
+  <div class="hero-content">
+    <div class="hero-eyebrow">Fairchild &amp; Dalrymple &nbsp;·&nbsp; Attorneys at Law</div>
+    <h1 class="hero-headline">
+      <!-- ⬇ EDIT: Your headline -->
+      Trusted Legal Counsel
+      <em>for Central Virginia.</em>
+    </h1>
+    <p class="hero-sub">
+      <!-- ⬇ EDIT: One sentence positioning statement -->
+      Strategic, results-driven legal representation for individuals and businesses — from Business Law and Criminal Defense to Family Law and Estate Planning.
+    </p>
+    <div class="hero-cta-row">
+      <a href="#contact" class="btn btn-primary btn-arrow">Book a Consultation</a>
+    </div>
+    <div class="hero-meta">
+      <div>
+        <div class="hero-stat-num">13<em>+</em></div>
+        <div class="hero-stat-label">Years Founded</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">6</div>
+        <div class="hero-stat-label">Practice Areas</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">Top</div>
+        <div class="hero-stat-label">Lvbg. Magazine Lawyer</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner" id="ticker-inner">
+    <span class="ticker-item">Business Law</span>
+    <span class="ticker-item">Civil Litigation</span>
+    <span class="ticker-item">Criminal Defense</span>
+    <span class="ticker-item">Elder Law</span>
+    <span class="ticker-item">Estate Planning</span>
+    <span class="ticker-item">Family Law</span>
+    <span class="ticker-item">Free Consultation Available</span>
+  </div>
+</div>
+
+<!-- ABOUT PREVIEW -->
+<section id="about-preview">
+  <div class="about-text reveal">
+    <div class="eyebrow">Who We Are</div>
+    <h2 class="section-title">A Legacy Built on<br><em>Trust &amp; Results</em></h2>
+    <p>Founded in 2013, Fairchild &amp; Dalrymple has grown into one of Central Virginia's most trusted multi-service law firms — recognised as a <strong>Lynchburg Business Magazine Top Lawyer</strong> firm. We serve clients from individuals to multi-million dollar businesses.</p>
+    <p>We believe the law should work for people, not against them. Our attorneys bring clarity, creativity, and tenacity to every case.</p>
+    <a href="about.html" class="btn btn-primary btn-arrow" style="margin-top:.5rem">Learn About Our Firm</a>
+  </div>
+  <div class="about-visual reveal reveal-delay-2">
+    <div class="about-img-frame ph" style="aspect-ratio:4/5">Office / Team Photo<br>[800×1000px]</div>
+    <div class="about-corner-badge">
+      <div class="badge-num">13</div>
+      <div class="badge-label">Years Est.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICE AREAS PREVIEW -->
+<section id="practice-preview">
+  <div class="practice-header">
+    <div class="reveal">
+      <div class="eyebrow">What We Do</div>
+      <h2 class="section-title" style="margin-top:1rem">Our <em>Practice Areas</em></h2>
+    </div>
+    <p class="reveal reveal-delay-1">From boardrooms to courtrooms, comprehensive legal services tailored to your situation.</p>
+  </div>
+  <div class="practice-grid reveal">
+    <div class="practice-card"><div class="pc-icon">⚖️</div><div class="pc-title">Business Law</div><div class="pc-desc">From startup to wind-up — contracts, compliance, and disputes for businesses of all sizes.</div><a href="practice.html" class="pc-link">Learn More</a></div>
+    <div class="practice-card"><div class="pc-icon">🏛️</div><div class="pc-title">Civil Litigation</div><div class="pc-desc">Aggressive courtroom representation and dispute resolution for complex civil matters.</div><a href="practice.html" class="pc-link">Learn More</a></div>
+    <div class="practice-card"><div class="pc-icon">🛡️</div><div class="pc-title">Criminal Defense</div><div class="pc-desc">DUI, misdemeanors, felonies — strong and thorough defense for every client.</div><a href="practice.html" class="pc-link">Learn More</a></div>
+    <div class="practice-card" style="border-right:none"><div class="pc-icon">📜</div><div class="pc-title">Estate Planning</div><div class="pc-desc">Wills, trusts, and succession planning to protect your legacy and your family.</div><a href="practice.html" class="pc-link">Learn More</a></div>
+  </div>
+  <div style="text-align:center;margin-top:2.5rem">
+    <a href="practice.html" class="btn btn-ghost btn-arrow">View All Practice Areas</a>
+  </div>
+</section>
+
+<!-- TEAM PREVIEW -->
+<section id="team-preview">
+  <div class="team-header reveal">
+    <div>
+      <div class="eyebrow">The People Behind the Work</div>
+      <h2 class="section-title" style="margin-top:1rem">Meet Our <em>Attorneys</em></h2>
+    </div>
+    <a href="team.html" class="btn btn-ghost btn-arrow">Full Team</a>
+  </div>
+  <div class="team-grid reveal">
+    <div class="team-card"><div class="team-photo"><div class="ph" style="height:100%">James D. Fairchild<br>[600×800px]</div><div class="team-overlay"><span class="team-overlay-link">View Profile →</span></div></div><div class="team-name">James D. Fairchild</div><div class="team-title">FoundingPartner</div></div>
+    <div class="team-card"><div class="team-photo"><div class="ph" style="height:100%">Joshua Dalrymple<br>[600×800px]</div><div class="team-overlay"><span class="team-overlay-link">View Profile →</span></div></div><div class="team-name">Joshua Dalrymple</div><div class="team-title">Founding Partner</div></div>
+    <div class="team-card"><div class="team-photo"><div class="ph" style="height:100%">Ben Rathsam<br>[600×800px]</div><div class="team-overlay"><span class="team-overlay-link">View Profile →</span></div></div><div class="team-name">Ben Rathsam</div><div class="team-title">Of Counsel</div></div>
+    <div class="team-card"><div class="team-photo"><div class="ph" style="height:100%">Katie Spaeth<br>[600×800px]</div><div class="team-overlay"><span class="team-overlay-link">View Profile →</span></div></div><div class="team-name">Katie Spaeth</div><div class="team-title">Senior Associate</div></div>
+    
+  </div>
+</section>
+
+<!-- BLOG PREVIEW -->
+<section id="blog-preview">
+  <div class="blog-header reveal">
+    <div>
+      <div class="eyebrow">Knowledge &amp; Insight</div>
+      <h2 class="section-title" style="margin-top:1rem">Latest <em>Articles</em></h2>
+    </div>
+    <a href="insights.html" class="btn btn-ghost btn-arrow">All Articles</a>
+  </div>
+  <div class="blog-grid reveal" id="blog-grid">
+    <div class="blog-card featured"><div class="blog-card-thumb ph">Featured Article Thumbnail [1200×500px]</div><div class="blog-tag">[Practice Area Tag]</div><div class="blog-title">[Featured Article Title — Make it compelling, ~8 words]</div><div class="blog-excerpt">[2–3 sentence excerpt.]</div><div class="blog-meta"><span>[Date]</span><span class="blog-meta-link">Read full article →</span></div></div>
+    <div class="blog-card"><div class="blog-tag">[Tag]</div><div class="blog-title">[Article Title]</div><div class="blog-meta"><span>[Date]</span><span class="blog-meta-link">Read →</span></div></div>
+    <div class="blog-card"><div class="blog-tag">[Tag]</div><div class="blog-title">[Article Title]</div><div class="blog-meta"><span>[Date]</span><span class="blog-meta-link">Read →</span></div></div>
+  </div>
+</section>
+
+<!-- BLOG CAROUSEL -->
+<section id="blog-carousel">
+  <div class="carousel-header reveal">
+    <div><div class="eyebrow">Recent Insights</div><h2 class="section-title" style="margin-top:.8rem">Stay <em>Informed</em></h2></div>
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="prev-btn">&#8592;</button>
+      <button class="carousel-btn" id="next-btn">&#8594;</button>
+    </div>
+  </div>
+  <div class="carousel-track-wrap"><div class="carousel-track" id="carousel-track"></div></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-info reveal">
+    <div class="eyebrow">Get in Touch</div>
+    <h2 class="section-title" style="margin-top:1.2rem">Schedule Your<br><em>Free Consultation</em></h2>
+    <p>Our attorneys are ready to listen, advise, and act. Every consultation is confidential and carries no obligation.</p>
+    <div class="contact-item"><div class="ci-icon">📍</div><div class="ci-text"><strong>Office Address</strong>Lynchburg, Virginia · Central Virginia</div></div>
+    <div class="contact-item"><div class="ci-icon">📞</div><div class="ci-text"><strong>Phone</strong><a href="tel:14348465470" style="color:var(--accent)">(434) 846-5470</a></div></div>
+    <div class="contact-item"><div class="ci-icon">✉️</div><div class="ci-text"><strong>Email</strong><a href="/cdn-cgi/l/email-protection#10737f7e6471736450767179627378797c747c716766713e737f7d" style="color:var(--accent)"><span class="__cf_email__" data-cfemail="02616d6c766361764264636b70616a6b6e666e637574632c616d6f">[email&#160;protected]</span></a></div></div>
+  </div>
+  <div class="reveal reveal-delay-1">
+    <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">First Name *</label><input type="text" class="form-input" placeholder="First Name" required></div>
+        <div class="form-group"><label class="form-label">Last Name *</label><input type="text" class="form-input" placeholder="Last Name" required></div>
+      </div>
+      <div class="form-group"><label class="form-label">Email Address *</label><input type="email" class="form-input" placeholder="your@email.com" required></div>
+      <div class="form-group"><label class="form-label">Phone Number</label><input type="tel" class="form-input" placeholder="(434) 000-0000"></div>
+      <div class="form-group"><label class="form-label">Practice Area *</label>
+        <select class="form-input" required>
+          <option value="">Select a practice area…</option>
+          <option>Business Law</option><option>Civil Litigation</option><option>Criminal Defense</option>
+          <option>Elder Law</option><option>Estate Planning</option><option>Family Law</option>
+        </select>
+      </div>
+      <div class="form-group"><label class="form-label">Brief Description *</label><textarea class="form-input" placeholder="Briefly describe your legal matter — all information is confidential" required></textarea></div>
+      <div class="form-success" id="form-success">✓ Thank you — we'll be in touch within one business day.</div>
+      <div class="form-footer">
+        <p class="form-legal">All information is strictly confidential and protected under attorney–client privilege. No obligation to retain.</p>
+        <button type="submit" class="btn btn-primary btn-arrow">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo" style="margin-bottom:1rem">
+        <img src="logo.png" alt="crest" style="width:30px;height:30px;object-fit:contain;filter:sepia(1) saturate(2) hue-rotate(5deg) brightness(.55)">
+        <span class="nav-logo-text" style="margin-left:.65rem">
+          <span class="nav-logo-name" style="font-size:.95rem">Fairchild <span style="color:var(--accent)">&amp;</span> Dalrymple</span>
+          <span class="nav-logo-tagline">Attorneys at Law</span>
+        </span>
+      </a>
+      <p>Fairchild &amp; Dalrymple — trusted legal counsel for individuals and businesses across Central Virginia.</p>
+      <p style="margin-top:.75rem;font-size:.85rem;color:var(--accent);font-weight:500">(434) 846-5470</p>
+    </div>
+    <div class="footer-col">
+      <h4>Practice Areas</h4>
+      <ul>
+        <li><a href="practice.html">Business Law</a></li>
+        <li><a href="practice.html">Civil Litigation</a></li>
+        <li><a href="practice.html">Criminal Defense</a></li>
+        <li><a href="practice.html">Elder Law</a></li>
+        <li><a href="practice.html">Estate Planning</a></li>
+        <li><a href="practice.html">Family Law</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Firm</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Attorney Advertising</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; [YEAR] Fairchild &amp; Dalrymple, Attorneys at Law. All rights reserved.</span>
+    <span>Past results do not guarantee future outcomes.</span>
+  </div>
+</footer><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="shared.js"></script>
+<script>
+/* Index-only scroll: banner always visible, nav always gold */
+window.addEventListener('scroll', function() {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+});
+</script>
+
+<script>
+async function loadBlogs() {
+  let blogs = [];
+  try { const r = await fetch('blogs.json'); if (!r.ok) throw new Error(); blogs = await r.json(); } catch { return; }
+  if (!blogs.length) return;
+  const grid = document.getElementById('blog-grid');
+  grid.innerHTML = blogs.slice(0,3).map((b,i) => `<a class="blog-card ${i===0?'featured':''}" href="blog-post.html?slug=${b.slug}">${i===0?`<div class="blog-card-thumb ph">Article Thumbnail</div>`:''}<div class="blog-tag">${b.tag}</div><div class="blog-title">${b.title}</div>${i===0?`<div class="blog-excerpt">${b.excerpt}</div>`:''}<div class="blog-meta"><span>${b.date}</span><span class="blog-meta-link">Read ${i===0?'full article':''} →</span></div></a>`).join('');
+  const track = document.getElementById('carousel-track');
+  track.innerHTML = [...blogs,...blogs].map(b=>`<div class="carousel-slide" onclick="location.href='blog-post.html?slug=${b.slug}'"><div class="cs-tag">${b.tag}</div><div class="cs-title">${b.title}</div><div class="cs-date">${b.date}</div></div>`).join('');
+  initCarousel(blogs.length);
+}
+function initCarousel(total) {
+  const track = document.getElementById('carousel-track');
+  let idx=0, timer;
+  const sw = () => { const s=track.querySelector('.carousel-slide'); return s?s.offsetWidth+1.5:341.5; };
+  const go = i => { idx=Math.max(0,Math.min(i,total-1)); track.style.transform=`translateX(-${idx*sw()}px)`; };
+  const auto = () => { clearInterval(timer); timer=setInterval(()=>go(idx>=total-1?0:idx+1),4500); };
+  document.getElementById('prev-btn').onclick=()=>{go(idx-1);auto()};
+  document.getElementById('next-btn').onclick=()=>{go(idx+1);auto()};
+  let tx=0;
+  track.addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
+  track.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>40){go(d<0?idx+1:idx-1);auto();}},{passive:true});
+  window.addEventListener('resize',()=>{track.style.transition='none';track.style.transform=`translateX(-${idx*sw()}px)`;requestAnimationFrame(()=>{track.style.transition='';});});
+  auto();
+}
+function handleSubmit(e) {
+  e.preventDefault();
+  document.getElementById('form-success').style.display='block';
+  e.target.querySelectorAll('input,select,textarea').forEach(el=>el.value='');
+}
+loadBlogs();
+</script>
+</body>
+</html>

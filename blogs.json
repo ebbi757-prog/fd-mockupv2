@@ -1,0 +1,22 @@
+[
+  {
+    "id": "unique-post-id",
+    "title": "Blog Post Title",
+    "excerpt": "A short summary or excerpt of the blog post content.",
+    "tag": "Category Name",
+    "date": "YYYY-MM-DD",
+    "author": "Author Name",
+    "thumbnail": "path/to/thumbnail-image.jpg",
+    "url": "path/to/full-post.html"
+  },
+  {
+    "id": "another-post-id",
+    "title": "Another Blog Post",
+    "excerpt": "Another short description.",
+    "tag": "Another Category",
+    "date": "YYYY-MM-DD",
+    "author": "Another Author",
+    "thumbnail": "path/to/another-image.jpg",
+    "url": "path/to/another-post.html"
+  }
+]

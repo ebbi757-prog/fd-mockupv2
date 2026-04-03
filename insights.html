@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Insights — Fairchild &amp; Dalrymple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+  .insights-section{padding:var(--gap) 5vw}
+  .filters-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:3rem}
+  .filter-btn{padding:.45rem 1.2rem;border:1px solid var(--rule);background:transparent;color:var(--muted);font-family:var(--sans);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .25s}
+  .filter-btn.active,.filter-btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+  .insights-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2rem}
+  .ins-card{background:var(--surface);display:flex;flex-direction:column;transition:background .3s;text-decoration:none;color:inherit}
+  .ins-card:hover{background:var(--surface2)}
+  .ins-thumb{width:100%;aspect-ratio:16/9}
+  .ins-body{padding:1.8rem;flex:1;display:flex;flex-direction:column}
+  .ins-tag{font-size:.66rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:.7rem}
+  .ins-title{font-family:var(--serif);font-size:1.25rem;font-weight:700;line-height:1.35;color:var(--ink);margin-bottom:.8rem;flex:1}
+  .ins-excerpt{font-size:.87rem;line-height:1.7;color:var(--muted);margin-bottom:1.2rem}
+  .ins-meta{font-size:.72rem;color:var(--muted);display:flex;justify-content:space-between;border-top:1px solid var(--rule);padding-top:.9rem;margin-top:auto}
+  .ins-meta-link{color:var(--accent)}
+  @media(max-width:768px){.insights-section{padding:4rem 6vw}}
+</style>
+</head>
+<body><!-- TOP BANNER -->
+<div class="top-banner" id="top-banner" style="position:fixed;top:0;left:0;right:0;z-index:300">
+  <div class="top-banner-left">Fairchild &amp; Dalrymple, PLLC &nbsp;·&nbsp; Lynchburg, Virginia</div>
+  <div class="top-banner-right">
+    <a class="banner-contact" href="tel:14348465470">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      (434) 846-5470
+    </a>
+    <a class="banner-contact" href="/cdn-cgi/l/email-protection#81e2eeeff5e0e2f5c1e7e0e8f3e2e9e8ede5ede0f6f7e0afe2eeec">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <span class="__cf_email__" data-cfemail="6b0804051f0a081f2b0d0a0219080302070f070a1c1d0a45080406">[email&#160;protected]</span>
+    </a>
+  </div>
+</div><!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <img class="nav-logo-img" src="logo.png" alt="Fairchild &amp; Dalrymple crest" width="36" height="36" style="width:36px;height:36px;object-fit:contain;filter:sepia(1) saturate(2) hue-rotate(5deg) brightness(.55)">
+    <span class="nav-logo-text">
+      <span class="nav-logo-name">Fairchild <span style="color:var(--accent)">&amp;</span> Dalrymple</span>
+      <span class="nav-logo-tagline">Attorneys at Law</span>
+    </span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="practice.html">Practice Areas</a></li>
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="insights.html">Insights</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Free Consultation</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navigation">
+  <button class="mob-close" id="mob-close" aria-label="Close menu">&#x2715;</button>
+  <div style="display:flex;align-items:center;gap:.7rem;margin-bottom:.5rem;opacity:.45">
+    <img src="logo.png" alt="" style="width:28px;height:28px;object-fit:contain;filter:sepia(1) saturate(2) hue-rotate(5deg) brightness(.55)">
+    <span style="font-family:var(--serif);font-size:.9rem;color:var(--ink)">Fairchild &amp; Dalrymple</span>
+  </div>
+  <a href="about.html" onclick="closeDrawer()">About</a>
+  <a href="practice.html" onclick="closeDrawer()">Practice Areas</a>
+  <a href="team.html" onclick="closeDrawer()">Our Team</a>
+  <a href="insights.html" onclick="closeDrawer()">Insights</a>
+  <a href="index.html#contact" onclick="closeDrawer()" class="mob-cta-btn">Free Consultation</a>
+</div>
+<div class="page-hero" style="margin-top:calc(36px + 68px)">
+  <div class="page-hero-eyebrow">Knowledge &amp; Insight</div>
+  <h1>Legal <em>Insights</em></h1>
+  <p>Stay informed on the legal issues that matter to you and your business. Published by the attorneys of Fairchild &amp; Dalrymple.</p>
+</div>
+
+<section class="insights-section">
+  <div class="filters-row" id="filters">
+    <button class="filter-btn active" onclick="filterBlogs('All',this)">All</button>
+    <button class="filter-btn" onclick="filterBlogs('Business Law',this)">Business Law</button>
+    <button class="filter-btn" onclick="filterBlogs('Criminal Defense',this)">Criminal Defense</button>
+    <button class="filter-btn" onclick="filterBlogs('Elder Law',this)">Elder Law</button>
+    <button class="filter-btn" onclick="filterBlogs('Estate Planning',this)">Estate Planning</button>
+    <button class="filter-btn" onclick="filterBlogs('Family Law',this)">Family Law</button>
+    <button class="filter-btn" onclick="filterBlogs('Civil Litigation',this)">Civil Litigation</button>
+  </div>
+  <div class="insights-grid" id="insights-grid">
+    <div class="ins-card"><div class="ins-thumb ph">Article Thumbnail</div><div class="ins-body"><div class="ins-tag">[Practice Area]</div><div class="ins-title">[Article Title — add articles via blogs.json]</div><div class="ins-excerpt">[Excerpt — loaded automatically from blogs.json once published.]</div><div class="ins-meta"><span>[Date]</span><span class="ins-meta-link">Read →</span></div></div></div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo" style="margin-bottom:1rem">
+        <img src="logo.png" alt="crest" style="width:30px;height:30px;object-fit:contain;filter:sepia(1) saturate(2) hue-rotate(5deg) brightness(.55)">
+        <span class="nav-logo-text" style="margin-left:.65rem">
+          <span class="nav-logo-name" style="font-size:.95rem">Fairchild <span style="color:var(--accent)">&amp;</span> Dalrymple</span>
+          <span class="nav-logo-tagline">Attorneys at Law</span>
+        </span>
+      </a>
+      <p>Fairchild &amp; Dalrymple — trusted legal counsel for individuals and businesses across Central Virginia.</p>
+      <p style="margin-top:.75rem;font-size:.85rem;color:var(--accent);font-weight:500">(434) 846-5470</p>
+    </div>
+    <div class="footer-col">
+      <h4>Practice Areas</h4>
+      <ul>
+        <li><a href="practice.html">Business Law</a></li>
+        <li><a href="practice.html">Civil Litigation</a></li>
+        <li><a href="practice.html">Criminal Defense</a></li>
+        <li><a href="practice.html">Elder Law</a></li>
+        <li><a href="practice.html">Estate Planning</a></li>
+        <li><a href="practice.html">Family Law</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Firm</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Attorney Advertising</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; [YEAR] Fairchild &amp; Dalrymple, Attorneys at Law. All rights reserved.</span>
+    <span>Past results do not guarantee future outcomes.</span>
+  </div>
+</footer><script src="shared.js"></script>
+
+<script>
+let allBlogs = [];
+async function initInsights() {
+  try { const r = await fetch('blogs.json'); if (!r.ok) throw new Error(); allBlogs = await r.json(); } catch { return; }
+  renderBlogs(allBlogs);
+}
+function renderBlogs(blogs) {
+  const grid = document.getElementById('insights-grid');
+  if (!blogs.length) { grid.innerHTML = '<p style="color:var(--muted)">No articles found.</p>'; return; }
+  grid.innerHTML = blogs.map(b => `<a class="ins-card" href="blog-post.html?slug=${b.slug}"><div class="ins-thumb ph">Article Thumbnail</div><div class="ins-body"><div class="ins-tag">${b.tag}</div><div class="ins-title">${b.title}</div><div class="ins-excerpt">${b.excerpt}</div><div class="ins-meta"><span>${b.date}</span><span class="ins-meta-link">Read →</span></div></div></a>`).join('');
+}
+function filterBlogs(tag, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderBlogs(tag === 'All' ? allBlogs : allBlogs.filter(b => b.tag === tag));
+}
+initInsights();
+</script>
+</body>
+</html>

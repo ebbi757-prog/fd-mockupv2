@@ -8,6 +8,16 @@
   <link rel="stylesheet" href="shared.css">
   
 </head>
+  <style>
+    .top-banner{background:var(--banneraccent);padding:.55rem 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.top-banner-left{font-size:.72rem;color:rgba(255,255,255,.75);letter-spacing:.04em}
+.top-banner-right{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.banner-contact{display:flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:500;color:#fff;white-space:nowrap;padding:.15rem .7rem;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:2px;transition:background .2s}
+.banner-contact:hover{background:rgba(255,255,255,.25)}
+.banner-contact svg{width:14px;height:14px;flex-shrink:0}
+@media(max-width:600px){.top-banner{justify-content:center}.top-banner-left{display:none}.top-banner-right{gap:.75rem}}
+
+  </style>
 <body><!-- TOP BANNER -->
 <div class="top-banner" id="top-banner" style="position:fixed;top:0;left:0;right:0;z-index:300">
   <div class="top-banner-left">Fairchild &amp; Dalrymple, PLLC &nbsp;·&nbsp; Lynchburg, Virginia</div>
